@@ -2,9 +2,9 @@
 
 Forecasts are made before each NYSE session, fingerprinted (SHA-256) and timestamped (RFC 3161 and OpenTimestamps) before the market opens. See VERIFY.md to check any day.
 
-- Sessions in the ledger: 11 (0 live, 11 practice)
-- Live since: not live yet (practice run)
-- Last session: 2026-11-02
+- Sessions in the ledger: 12 (1 live, 11 practice)
+- Live since: 2026-11-03
+- Last session: 2026-11-03
 
 **Forecast contents and scores are withheld for now** while the data license for publishing them is confirmed. Every forecast is already fingerprinted and timestamped, so when the contents are released anyone can check they were made before the session.
 
@@ -12,6 +12,12 @@ Forecasts are made before each NYSE session, fingerprinted (SHA-256) and timesta
 
 | entity | model | level | metric | value | n | 95% CI | p | note |
 |---|---|---|---|---|---|---|---|---|
+|  | LIVE |  | sessions_ok | 1 | 1 |  |  |  |
+|  | LIVE |  | sessions_partial | 0 | 1 |  |  |  |
+|  | LIVE |  | sessions_late | 0 | 1 |  |  |  |
+|  | LIVE |  | sessions_missed | 0 | 1 |  |  |  |
+|  | LIVE |  | sessions_unscored | 0 | 1 |  |  |  |
+|  | LIVE |  | uptime | 100.0% | 1 |  |  | share of sessions with an on-time, complete forecast |
 |  | PRACTICE |  | sessions_ok | 11 | 11 |  |  |  |
 |  | PRACTICE |  | sessions_partial | 0 | 11 |  |  |  |
 |  | PRACTICE |  | sessions_late | 0 | 11 |  |  |  |
